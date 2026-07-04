@@ -1123,7 +1123,7 @@ p { margin: 0 0 1rem; }
 
 .contacto__cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 380px));
+  grid-template-columns: minmax(0, 420px);
   justify-content: center;
   gap: clamp(1.2rem, 3vw, 2rem);
   margin-top: 3rem;
@@ -1158,9 +1158,6 @@ p { margin: 0 0 1rem; }
   margin-bottom: 1.6rem;
 }
 
-@media (max-width: 720px) {
-  .contacto__cards { grid-template-columns: minmax(0, 420px); }
-}
 
 /* ------------------------------------------------------------
    Footer

@@ -1,4 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "sitio-web"
+  "outputDirectory": "sitio-web",
+  "redirects": [
+    { "source": "/requinoa.html", "destination": "/", "permanent": true },
+    { "source": "/requinoa", "destination": "/", "permanent": true }
+  ]
 }

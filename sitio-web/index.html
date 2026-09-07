@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Senna — Apartamentos con Servicio Hotelero · Rancagua y Requínoa</title>
-  <meta name="description" content="Senna es una cadena de apartamentos con servicio hotelero en la Región de O'Higgins. Suites amobladas en Barrio El Tenis, Rancagua, y estudio urbano en Requínoa. Vivir bien, en el lugar correcto." />
-  <meta property="og:title" content="Senna — Apartamentos con Servicio Hotelero" />
-  <meta property="og:description" content="La independencia de un departamento privado con las comodidades de un hotel boutique. Rancagua · Requínoa." />
+  <link rel="icon" href="assets/logo/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1c2620" />
+  <title>Senna — Apartamentos con Servicio Hotelero en Rancagua</title>
+  <meta name="description" content="Senna Apart Hotel en el Barrio El Tenis, Rancagua: 20 suites amobladas con conserjería, wifi y estacionamiento incluido. Desde $59.500 por noche, IVA incluido." />
+  <meta property="og:title" content="Senna — Apartamentos con Servicio Hotelero en Rancagua" />
+  <meta property="og:description" content="La independencia de un departamento privado con las comodidades de un hotel boutique. Barrio El Tenis, Rancagua." />
   <meta property="og:image" content="assets/img/tenis-hero.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,22 +21,24 @@
 
   <!-- Preloader -->
   <div class="preloader" aria-hidden="true">
-    <div class="preloader__mark">SEN<span>NA</span></div>
+    <div class="preloader__mark"><img src="assets/logo/senna-lockup-horizontal-white.svg" alt="" /></div>
   </div>
 
   <!-- Navegación -->
   <header class="nav">
     <div class="wrap nav__inner">
-      <a class="nav__logo" href="index.html" aria-label="Senna — inicio">SEN<span>NA</span></a>
+      <a class="nav__logo" href="index.html" aria-label="Senna apart &amp; suites — inicio">
+        <img src="assets/logo/senna-lockup-horizontal-white.svg" alt="Senna apart &amp; suites" width="578" height="211" />
+      </a>
       <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav aria-label="Principal">
         <ul class="nav__links">
-          <li><a href="index.html#sedes">Sedes</a></li>
-          <li><a href="el-tenis.html">Barrio El Tenis</a></li>
-          <li><a href="requinoa.html">Requínoa</a></li>
-          <li><a class="nav__cta" href="index.html#contacto">Reservar</a></li>
+          <li><a href="#suite">La suite</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a class="nav__cta" href="#reserva">Reservar</a></li>
         </ul>
       </nav>
     </div>
@@ -44,14 +50,14 @@
       <img src="assets/img/tenis-hero.jpg" alt="Living de una suite Senna con vista a Rancagua" fetchpriority="high" />
     </div>
     <div class="wrap hero__content">
-      <p class="hero__kicker" data-cascade style="--i:0">Rancagua · Requínoa — Región de O'Higgins</p>
-      <h1 class="hero__title" data-cascade style="--i:1">Vivir bien, <em>en el lugar correcto.</em></h1>
+      <p class="hero__kicker" data-cascade style="--i:0">Barrio El Tenis · Rancagua — Región de O'Higgins</p>
+      <h1 class="hero__title" data-cascade style="--i:1">Descansar bien, <em>en el lugar correcto.</em></h1>
       <p class="hero__sub" data-cascade style="--i:2">
         Senna no es un hotel. No es un departamento. Es lo mejor de ambos:
         la independencia de un espacio privado con la hospitalidad de un hotel boutique.
       </p>
       <div data-cascade style="--i:3">
-        <a class="btn btn--light" href="#sedes">Conocer las sedes</a>
+        <a class="btn btn--light" href="#reserva">Consulta disponibilidad</a>
       </div>
     </div>
     <span class="hero__scroll" aria-hidden="true">Descubrir</span>
@@ -62,9 +68,8 @@
     <div class="marquee__track">
       <div class="marquee__group">
         <span class="marquee__item">Conserjería</span>
-        <span class="marquee__item">Housekeeping</span>
         <span class="marquee__item">Suites amobladas</span>
-        <span class="marquee__item">Wifi &amp; TV cable</span>
+        <span class="marquee__item">Wifi</span>
         <span class="marquee__item">Estacionamiento</span>
         <span class="marquee__item">Estadías flexibles</span>
         <span class="marquee__item">Walk-in closet</span>
@@ -72,9 +77,8 @@
       </div>
       <div class="marquee__group">
         <span class="marquee__item">Conserjería</span>
-        <span class="marquee__item">Housekeeping</span>
         <span class="marquee__item">Suites amobladas</span>
-        <span class="marquee__item">Wifi &amp; TV cable</span>
+        <span class="marquee__item">Wifi</span>
         <span class="marquee__item">Estacionamiento</span>
         <span class="marquee__item">Estadías flexibles</span>
         <span class="marquee__item">Walk-in closet</span>
@@ -90,13 +94,13 @@
         <p class="eyebrow reveal">La experiencia Senna</p>
         <h2 class="section-title reveal" style="--d:0.08s">Una nueva manera de <em>hospedarse</em></h2>
         <p class="lead reveal" style="--d:0.16s">
-          Senna redefine la manera de hospedarse en la Región de O'Higgins.
-          Combinamos la independencia de un departamento privado con las comodidades
-          de un hotel boutique: conserjería, housekeeping, espacios diseñados y una
-          ubicación estratégica en cada una de nuestras sedes.
+          Senna redefine la manera de hospedarse en Rancagua. Combinamos la
+          independencia de un departamento privado con las comodidades de un hotel
+          boutique: conserjería, espacios diseñados y una ubicación
+          estratégica en pleno Barrio El Tenis.
         </p>
         <p class="reveal" style="--d:0.22s">
-          Ya sea por una noche, una semana o una temporada completa, en Senna cada
+          Ya sea por una noche, unos días o una temporada completa, en Senna cada
           huésped encuentra un espacio pensado para vivir bien.
         </p>
         <div class="intro__stats reveal" style="--d:0.3s">
@@ -105,12 +109,8 @@
             <div class="stat__label">Suites equipadas</div>
           </div>
           <div class="stat">
-            <div class="stat__num"><span data-count="2">0</span></div>
-            <div class="stat__label">Sedes en la región</div>
-          </div>
-          <div class="stat">
-            <div class="stat__num"><span data-count="15">0</span>&prime;</div>
-            <div class="stat__label">Entre ambas ciudades</div>
+            <div class="stat__num"><span data-count="8">0</span>&prime;</div>
+            <div class="stat__label">Al Estadio El Teniente</div>
           </div>
         </div>
       </div>
@@ -118,42 +118,6 @@
         <div class="frame">
           <img src="assets/img/tenis-lifestyle.jpg" alt="Huéspedes disfrutando el living de una suite Senna" loading="lazy" />
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sedes -->
-  <section class="section section--cream" id="sedes">
-    <div class="wrap">
-      <div class="sedes__head">
-        <div>
-          <p class="eyebrow reveal">Nuestras sedes</p>
-          <h2 class="section-title reveal" style="--d:0.08s">Dos ubicaciones, <em>una misma hospitalidad</em></h2>
-        </div>
-        <p class="lead reveal" style="--d:0.16s">
-          De la sede insignia en pleno Barrio El Tenis al estudio urbano en el
-          corazón de Requínoa: cada espacio Senna está listo para habitar.
-        </p>
-      </div>
-      <div class="sedes__grid">
-        <a class="sede-card reveal" style="--d:0.1s" href="el-tenis.html">
-          <img src="assets/img/tenis-suite.jpg" alt="Suite con cama de hotel en Senna Barrio El Tenis" loading="lazy" />
-          <div class="sede-card__body">
-            <p class="sede-card__tag">Sede flagship · Rancagua</p>
-            <h3 class="sede-card__title">Barrio El Tenis</h3>
-            <p class="sede-card__meta">20 suites boutique · conserjería · housekeeping · estacionamiento incluido</p>
-            <span class="sede-card__link">Descubrir la sede</span>
-          </div>
-        </a>
-        <a class="sede-card reveal" style="--d:0.22s" href="requinoa.html">
-          <img src="assets/img/requinoa-hero.jpg" alt="Terraza con pérgola de Senna Requínoa" loading="lazy" />
-          <div class="sede-card__body">
-            <p class="sede-card__tag">Estudio urbano · Requínoa</p>
-            <h3 class="sede-card__title">Requínoa</h3>
-            <p class="sede-card__meta">Estudio listo para habitar · terraza · lavandería · a 15 minutos de Rancagua</p>
-            <span class="sede-card__link">Descubrir la sede</span>
-          </div>
-        </a>
       </div>
     </div>
   </section>
@@ -173,10 +137,10 @@
         </div>
         <div class="service reveal" style="--d:0.12s">
           <div class="service__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 21h16M6 21V8l6-4 6 4v13M9 21v-5h6v5"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 3h16v18H4zM4 9h16M8 3v6M9 13h6M9 17h6"/></svg>
           </div>
-          <h3>Housekeeping</h3>
-          <p>Servicio de aseo dos veces por semana para que solo se preocupe de vivir.</p>
+          <h3>Kitchenette equipada</h3>
+          <p>Cocina lista para usar en cada suite: no depende de horarios de restaurante.</p>
         </div>
         <div class="service reveal" style="--d:0.19s">
           <div class="service__icon" aria-hidden="true">
@@ -189,7 +153,7 @@
           <div class="service__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M5 12.55a11 11 0 0 1 14 0M8.5 15.5a6 6 0 0 1 7 0M12 19h.01"/></svg>
           </div>
-          <h3>Wifi, TV cable y música</h3>
+          <h3>Wifi y música ambiental</h3>
           <p>Conectividad total y ambientes agradables en todas las áreas comunes.</p>
         </div>
         <div class="service reveal" style="--d:0.12s">
@@ -197,16 +161,75 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M5 17h14l-1.5-5.5a2 2 0 0 0-1.93-1.5H8.43a2 2 0 0 0-1.93 1.5L5 17Zm0 0v3m14-3v3M7 10l1-3h8l1 3"/></svg>
           </div>
           <h3>Estacionamiento</h3>
-          <p>Estacionamiento privado incluido en la sede Barrio El Tenis.</p>
+          <p>Estacionamiento privado incluido para todos los huéspedes.</p>
         </div>
         <div class="service reveal" style="--d:0.19s">
           <div class="service__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
           </div>
           <h3>Estadías flexibles</h3>
-          <p>Una noche, una semana o una temporada completa: usted define el ritmo.</p>
+          <p>Una noche, unos días o una temporada completa: usted define el ritmo.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- La suite + tarifa -->
+  <section class="section" id="suite">
+    <div class="wrap ficha__grid">
+      <div>
+        <p class="eyebrow reveal">La suite</p>
+        <h2 class="section-title reveal" style="--d:0.08s">El confort de un hotel, <em>la privacidad de un hogar</em></h2>
+        <p class="lead reveal" style="--d:0.16s">
+          Cada suite ha sido decorada cuidadosamente para brindar el confort de un
+          hotel boutique con la privacidad de un hogar. A pasos de restaurantes, cafés
+          y la universidad, con movilización expedita hacia todos los puntos de la
+          ciudad y las salidas a Santiago.
+        </p>
+        <p class="reveal" style="--d:0.22s">
+          La elección ideal para profesionales, ejecutivos y parejas que buscan una
+          estadía superior.
+        </p>
+        <ul class="ficha__features">
+          <li class="reveal" style="--d:0.05s">Suite de 1 dormitorio con cama de hotel</li>
+          <li class="reveal" style="--d:0.1s">Baño privado con tina</li>
+          <li class="reveal" style="--d:0.15s">Kitchenette completamente equipada</li>
+          <li class="reveal" style="--d:0.2s">Amplios espacios luminosos con balcón</li>
+          <li class="reveal" style="--d:0.25s">Walk-in closet y caja de seguridad</li>
+          <li class="reveal" style="--d:0.3s">Escritorio para trabajar</li>
+          <li class="reveal" style="--d:0.35s">Salas de estar en todos los pisos</li>
+          <li class="reveal" style="--d:0.4s">Zona wifi y música ambiental</li>
+          <li class="reveal" style="--d:0.45s">Conserjería de apoyo</li>
+          <li class="reveal" style="--d:0.55s">Capacidad para 2 personas</li>
+          <li class="reveal" style="--d:0.6s">Calefacción en la suite</li>
+          <li class="reveal" style="--d:0.6s">Estacionamiento privado incluido</li>
+        </ul>
+      </div>
+
+      <!-- Tarifas -->
+      <aside class="tarifa-card reveal reveal-right" id="tarifas" style="--d:0.2s">
+        <p class="tarifa-card__label">Tarifa por noche</p>
+        <div class="tarifa-card__price">$59.500 <small>/ noche</small></div>
+        <ul class="tarifa-card__rows">
+          <li><span>IVA</span><span>Incluido</span></li>
+          <li><span>Mínimo de estadía</span><span>1 noche</span></li>
+          <li><span>Capacidad</span><span>2 personas</span></li>
+          <li><span>Estacionamiento</span><span>Incluido</span></li>
+          <li><span>Wifi</span><span>Incluido</span></li>
+        </ul>
+        <div class="tarifa-card__alt">
+          <p class="tarifa-card__label">Estadía mensual</p>
+          <div class="tarifa-card__price tarifa-card__price--sm">12 UF <small>/ mes</small></div>
+          <ul class="tarifa-card__rows">
+            <li><span>Gastos comunes</span><span>$65.000</span></li>
+          </ul>
+        </div>
+        <a class="btn btn--solid" href="https://wa.me/56966078526?text=Hola%20Alexandra%2C%20escribo%20desde%20el%20sitio%20web%20de%20Senna%20Apart%20Hotel.%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20disponibilidad%20y%20las%20tarifas%20para%20una%20estad%C3%ADa.%20%C2%BFMe%20ayudas%3F" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 6.9 3.8Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 2.6 1.1 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3Z"/></svg>
+          Consulta disponibilidad
+        </a>
+        <p class="tarifa-card__note">Alexandra Cisterna · Anfitriona<br />+56 9 6607 8526 (WhatsApp)</p>
+      </aside>
     </div>
   </section>
 
@@ -223,26 +246,94 @@
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section class="section section--ink contacto" id="contacto">
+  <!-- Galería -->
+  <section class="section section--cream" id="galeria">
+    <div class="wrap galeria__head">
+      <p class="eyebrow reveal">Galería</p>
+      <h2 class="section-title reveal" style="--d:0.08s">Cada rincón, <em>tal como es.</em></h2>
+    </div>
     <div class="wrap">
-      <p class="eyebrow reveal" style="justify-content:center">Reservas y consultas</p>
-      <h2 class="section-title reveal" style="--d:0.08s">Su próxima estadía <em>comienza aquí</em></h2>
-      <p class="contacto__lead reveal" style="--d:0.16s">
-        Escríbanos por WhatsApp y Alexandra Cisterna, nuestra anfitriona,
-        le ayudará a encontrar el espacio Senna perfecto para su estadía.
-      </p>
-      <div class="contacto__cards">
-        <div class="contacto-card reveal" style="--d:0.1s">
-          <p class="contacto-card__sede">Senna · Rancagua y Requínoa</p>
-          <h3>Alexandra Cisterna</h3>
-          <p class="contacto-card__rol">Anfitriona</p>
-          <a class="btn btn--light" href="https://wa.me/56966078526?text=Hola%20Alexandra%2C%20quiero%20consultar%20por%20una%20estad%C3%ADa%20en%20Senna" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 6.9 3.8Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 2.6 1.1 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3Z"/></svg>
-            +56 9 6607 8526
-          </a>
+      <div class="galeria__grid galeria__grid--cuadrada">
+        <button class="galeria__item reveal" style="--d:0.05s"><img src="assets/img/tenis-living.jpg" alt="Living de la suite con sofá y balcón" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.1s"><img src="assets/img/tenis-suite-2.jpg" alt="Dormitorio con cama de hotel" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.15s"><img src="assets/img/tenis-cocina.jpg" alt="Kitchenette equipada con barra" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.2s"><img src="assets/img/tenis-bano.jpg" alt="Baño privado con tina" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.05s"><img src="assets/img/tenis-living-2.jpg" alt="Living con cortinas y vista al balcón" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.1s"><img src="assets/img/tenis-escritorio.jpg" alt="Escritorio de trabajo con luz natural" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.15s"><img src="assets/img/tenis-suite-3.jpg" alt="Dormitorio luminoso en tonos neutros" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.2s"><img src="assets/img/tenis-closet.jpg" alt="Walk-in closet de la suite" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.05s"><img src="assets/img/tenis-suite.jpg" alt="Suite con cama de hotel y respaldo capitoné" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.1s"><img src="assets/img/tenis-lobby.jpg" alt="Recepción de Senna Apart Hotel" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.15s"><img src="assets/img/tenis-suite-4.jpg" alt="Dormitorio de otra unidad" loading="lazy" /></button>
+        <button class="galeria__item reveal" style="--d:0.2s"><img src="assets/img/tenis-exterior.jpg" alt="Edificio Senna en el Barrio El Tenis" loading="lazy" /></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ubicación -->
+  <section class="section" id="ubicacion">
+    <div class="wrap ubicacion__grid">
+      <div>
+        <p class="eyebrow reveal">Ubicación</p>
+        <h2 class="section-title reveal" style="--d:0.08s">Barrio El Tenis, <em>Rancagua.</em></h2>
+        <p class="ubicacion__entorno reveal" style="--d:0.14s">Restaurantes, cafés y universidad a pasos.</p>
+        <p class="ubicacion__direccion reveal" style="--d:0.18s">Oficial Carlos María O'Carrol 022</p>
+        <ul class="ubicacion__distancias">
+          <li class="reveal" style="--d:0.1s"><span class="ubicacion__lugar">Estadio El Teniente</span><span class="ubicacion__valor">8 minutos · caminando</span></li>
+          <li class="reveal" style="--d:0.16s"><span class="ubicacion__lugar">Casino Monticello</span><span class="ubicacion__valor">30 km · auto</span></li>
+          <li class="reveal" style="--d:0.22s"><span class="ubicacion__lugar">Centro de Convenciones Monticello</span><span class="ubicacion__valor">30 km · auto</span></li>
+          <li class="reveal" style="--d:0.28s"><span class="ubicacion__lugar">Aeropuerto Internacional de Santiago (SCL)</span><span class="ubicacion__valor">96 km · auto</span></li>
+        </ul>
+      </div>
+      <div class="reveal reveal-scale" style="--d:0.2s">
+        <div class="ubicacion__map">
+          <iframe
+            src="https://www.google.com/maps?q=-34.1723848,-70.7346105&z=16&output=embed"
+            title="Mapa — Senna, Oficial Carlos María O'Carrol 022, Rancagua"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <a class="ubicacion__link" href="https://www.google.com/maps/place/Senna+Departamentos+amoblados/@-34.1723848,-70.7346105,17z" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reserva -->
+  <section class="section section--ink reserva" id="reserva">
+    <div class="wrap reserva__grid">
+      <div>
+        <p class="eyebrow reveal">Reserva</p>
+        <h2 class="section-title reveal" style="--d:0.08s">Consulta tu estadía <em>en un mensaje.</em></h2>
+        <p class="reserva__nota reveal" style="--d:0.16s">
+          Elige tus fechas y te respondemos por WhatsApp con disponibilidad y tarifa.
+        </p>
+        <div class="reserva__anfitriona reveal" style="--d:0.22s">
+          <img src="assets/img/anfitriona.jpg" alt="Alexandra Cisterna, anfitriona de Senna" width="640" height="640" loading="lazy" />
+          <div>
+            <p class="reserva__anfitriona-nombre">Alexandra Cisterna</p>
+            <p class="reserva__anfitriona-rol">Anfitriona · te responde personalmente</p>
+            <a href="https://wa.me/56966078526?text=Te%20contacto%20por%20Senna%20Apart%20Hotel" target="_blank" rel="noopener">+56 9 6607 8526</a>
+          </div>
         </div>
       </div>
+
+      <form class="reserva__form reveal reveal-right" id="form-reserva" style="--d:0.2s">
+        <div class="reserva__campo">
+          <label for="checkin">Entrada</label>
+          <input type="date" id="checkin" name="checkin" required />
+        </div>
+        <div class="reserva__campo">
+          <label for="checkout">Salida</label>
+          <input type="date" id="checkout" name="checkout" required />
+        </div>
+        <p class="reserva__ayuda" id="reserva-ayuda" role="status" aria-live="polite"></p>
+        <a class="btn btn--solid reserva__cta" id="reserva-cta" href="https://wa.me/56966078526" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 6.9 3.8Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 2.6 1.1 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3Z"/></svg>
+          Consultar por WhatsApp
+        </a>
+        <p class="reserva__check">$59.500 por noche, IVA incluido · Check-in hasta las 20:00 · Check-out 12:00 · 2 personas</p>
+      </form>
     </div>
   </section>
 
@@ -251,35 +342,41 @@
     <div class="wrap">
       <div class="footer__grid">
         <div>
-          <div class="footer__logo">SEN<span>NA</span></div>
-          <p>Cadena de apartamentos con servicio hotelero en la Región de O'Higgins.<br />Vivir bien, en el lugar correcto.</p>
+          <div class="footer__logo"><img src="assets/logo/senna-lockup-horizontal-white.svg" alt="Senna apart &amp; suites" width="578" height="211" loading="lazy" /></div>
+          <p>Apartamentos con servicio hotelero en Rancagua.<br />Vivir bien, en el lugar correcto.</p>
         </div>
         <div>
-          <h4>Sedes</h4>
+          <h4>Dónde estamos</h4>
           <ul>
-            <li><a href="el-tenis.html">Barrio El Tenis — Rancagua</a></li>
-            <li><a href="requinoa.html">Comercio 15 — Requínoa</a></li>
+            <li><a href="#ubicacion">Oficial Carlos María O'Carrol 022</a></li>
+            <li><a href="#ubicacion">Barrio El Tenis — Rancagua</a></li>
           </ul>
         </div>
         <div>
           <h4>Reservas</h4>
           <ul>
-            <li><a href="https://wa.me/56966078526" target="_blank" rel="noopener">Alexandra Cisterna · Anfitriona</a></li>
-            <li><a href="https://wa.me/56966078526" target="_blank" rel="noopener">+56 9 6607 8526 (WhatsApp)</a></li>
+            <li><a href="https://wa.me/56966078526?text=Te%20contacto%20por%20Senna%20Apart%20Hotel" target="_blank" rel="noopener">Alexandra Cisterna · Anfitriona</a></li>
+            <li><a href="https://wa.me/56966078526?text=Te%20contacto%20por%20Senna%20Apart%20Hotel" target="_blank" rel="noopener">+56 9 6607 8526 (WhatsApp)</a></li>
+            <li><a href="https://www.instagram.com/sennahotel/" target="_blank" rel="noopener">Instagram · @sennahotel</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__base">
         <span>© <span data-year>2026</span> Senna. Todos los derechos reservados.</span>
-        <span>Rancagua · Requínoa — Chile</span>
+        <span>Rancagua — Chile</span>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp flotante -->
-  <a class="wsp-float" href="https://wa.me/56966078526" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 6.9 3.8Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 2.6 1.1 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3Z"/></svg>
-  </a>
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Galería de imágenes">
+    <img src="" alt="" />
+    <button class="lightbox__btn lightbox__close" aria-label="Cerrar">✕</button>
+    <button class="lightbox__btn lightbox__prev" aria-label="Anterior">←</button>
+    <button class="lightbox__btn lightbox__next" aria-label="Siguiente">→</button>
+    <span class="lightbox__count"></span>
+  </div>
+
 
   <script src="js/main.js"></script>
 </body>

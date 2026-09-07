@@ -186,6 +186,70 @@
   }
 
   /* ----------------------------------------------------------
+     Reserva: fechas → mensaje de WhatsApp
+     ---------------------------------------------------------- */
+  const checkin = document.getElementById("checkin");
+  const checkout = document.getElementById("checkout");
+  const reservaCta = document.getElementById("reserva-cta");
+  const reservaAyuda = document.getElementById("reserva-ayuda");
+
+  if (checkin && checkout && reservaCta) {
+    const aIso = (d) => {
+      const off = d.getTimezoneOffset() * 60000;
+      return new Date(d.getTime() - off).toISOString().slice(0, 10);
+    };
+
+    const formatoEs = (iso) => {
+      const [a, m, d] = iso.split("-").map(Number);
+      return new Date(a, m - 1, d).toLocaleDateString("es-CL", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      });
+    };
+
+    const sumarDias = (iso, dias) => {
+      const [a, m, d] = iso.split("-").map(Number);
+      const fecha = new Date(a, m - 1, d);
+      fecha.setDate(fecha.getDate() + dias);
+      return aIso(fecha);
+    };
+
+    const hoy = aIso(new Date());
+    checkin.min = hoy;
+    checkin.value = sumarDias(hoy, 1);
+    checkout.min = sumarDias(hoy, 2);
+    checkout.value = sumarDias(hoy, 2);
+
+    const base = reservaCta.href.split("?")[0];
+
+    const actualizar = () => {
+      const minSalida = sumarDias(checkin.value, 1);
+      checkout.min = minSalida;
+
+      if (checkout.value < minSalida) {
+        checkout.value = minSalida;
+        if (reservaAyuda) {
+          reservaAyuda.textContent = "Ajustamos la salida: debe ser posterior a la entrada.";
+        }
+      } else if (reservaAyuda) {
+        reservaAyuda.textContent = "";
+      }
+
+      const mensaje =
+        "Hola Alexandra, me gustaría consultar disponibilidad en Senna Rancagua.\n" +
+        "Entrada: " + formatoEs(checkin.value) + "\n" +
+        "Salida: " + formatoEs(checkout.value) + "\n" +
+        "Para 2 personas.";
+      reservaCta.href = base + "?text=" + encodeURIComponent(mensaje);
+    };
+
+    checkin.addEventListener("change", actualizar);
+    checkout.addEventListener("change", actualizar);
+    actualizar();
+  }
+
+  /* ----------------------------------------------------------
      Año dinámico en footer
      ---------------------------------------------------------- */
   document.querySelectorAll("[data-year]").forEach((el) => {

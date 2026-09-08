@@ -217,7 +217,8 @@ p { margin: 0 0 1rem; }
 }
 
 .nav__logo img {
-  height: clamp(2.6rem, 4vw, 3.3rem);
+  /* +20% respecto del tamaño original (2.6 / 4vw / 3.3) */
+  height: clamp(3.12rem, 4.8vw, 3.96rem);
   width: auto;
   display: block;
 }
@@ -551,6 +552,15 @@ p { margin: 0 0 1rem; }
 .intro__media .frame {
   position: relative;
   overflow: hidden;
+  /* Sombra proyectada hacia la esquina superior derecha */
+  box-shadow: 7px -7px 16px rgba(28, 38, 32, 0.2),
+              26px -26px 55px rgba(28, 38, 32, 0.4);
+  transition: box-shadow 0.6s var(--ease-soft);
+}
+
+.intro__media:hover .frame {
+  box-shadow: 9px -9px 20px rgba(28, 38, 32, 0.24),
+              34px -34px 70px rgba(28, 38, 32, 0.46);
 }
 
 .intro__media .frame img {
@@ -868,6 +878,12 @@ p { margin: 0 0 1rem; }
 /* Con las tarifas ocultas, la ficha ocupa una sola columna */
 .ficha__grid:has(> :only-child) {
   grid-template-columns: 1fr;
+}
+
+/* ...y el texto deja de estar embuchacado: usa todo el ancho del wrap */
+.ficha__grid:has(> :only-child) > * > .lead,
+.ficha__grid:has(> :only-child) > * > p {
+  max-width: none;
 }
 
 .ficha__features {
@@ -1462,16 +1478,18 @@ p { margin: 0 0 1rem; }
 
 .reserva__anfitriona {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1.1rem;
+  gap: 1.6rem;
   margin-top: 2.2rem;
   padding-top: 1.8rem;
   border-top: 1px solid var(--line-light);
 }
 
 .reserva__anfitriona img {
-  width: 5.5rem;
-  height: 5.5rem;
+  /* 3x respecto del tamaño original (5.5rem) */
+  width: 16.5rem;
+  height: 16.5rem;
   object-fit: cover;
   flex: none;
   filter: saturate(0.9);
@@ -1500,3 +1518,10 @@ p { margin: 0 0 1rem; }
 }
 
 .reserva__anfitriona a:hover { border-color: var(--brass-soft); }
+
+@media (max-width: 560px) {
+  .reserva__anfitriona img {
+    width: min(16.5rem, 70vw);
+    height: min(16.5rem, 70vw);
+  }
+}

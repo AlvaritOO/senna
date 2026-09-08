@@ -865,6 +865,11 @@ p { margin: 0 0 1rem; }
   align-items: start;
 }
 
+/* Con las tarifas ocultas, la ficha ocupa una sola columna */
+.ficha__grid:has(> :only-child) {
+  grid-template-columns: 1fr;
+}
+
 .ficha__features {
   list-style: none;
   margin: 2rem 0 0;

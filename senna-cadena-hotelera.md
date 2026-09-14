@@ -37,7 +37,6 @@ Cada suite ha sido decorada cuidadosamente para brindar el confort de un hotel b
 - 🛋️ Salas de estar en todos los pisos
 - 🌼 Zona wifi, TV cable y música ambiental
 - 🛎️ Conserjería de apoyo
-- 🧹 Servicio de housekeeping 2 veces por semana
 - 🎨 Espacios adaptables según las necesidades de cada huésped
 - 🚗 Estacionamiento privado incluido
 
@@ -45,7 +44,7 @@ Cada suite ha sido decorada cuidadosamente para brindar el confort de un hotel b
 
 A minutos del centro de Rancagua y de las salidas a Santiago, en un entorno rodeado de:
 
-- 🏫 Colegios
+- 🏫 Colegios y Universidades
 - 🏥 Hospitales y clínicas
 - 🛒 Supermercados
 - 🏬 Centros comerciales
@@ -57,6 +56,7 @@ A minutos del centro de Rancagua y de las salidas a Santiago, en un entorno rode
 | 💵 Tarifa mensual | 12 UF |
 | ✅ Gastos comunes | $65.000 |
 | 🚗 Estacionamiento | Incluido |
+| Lunes a Miércoles: $59.500 · Jueves a Domingo: $65.000 iva incluido|
 
 ### Reservas y consultas
 
